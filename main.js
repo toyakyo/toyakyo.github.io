@@ -7,6 +7,7 @@ const STRINGS = {
     "works.title": "作品",
     "works.langforge": "AI 遊戲截圖翻譯工具,翻譯結果直接疊在畫面上。",
     "works.brighttube": "Chrome 擴充功能,用單選按鈕快速調整 YouTube 影片亮度。",
+    "works.quicktruth": "Chrome 擴充功能,在 Facebook 貼文旁顯示 Cofacts 與台灣事實查核中心的查核結果,並提供本機 AI 分析。",
     "contact.title": "聯絡",
     "nav.privacy": "隱私權政策",
     "nav.home": "← 回首頁",
@@ -25,7 +26,8 @@ const STRINGS = {
     "privacy.changes.title": "政策變更",
     "privacy.changes.body": "本政策若有修改,會更新在此頁面並標示最後更新日期。",
     "privacy.contact.title": "聯絡我們",
-    "privacy.contact.body": "對本政策有任何疑問,請透過 GitHub 聯絡:"
+    "privacy.contact.body": "對本政策有任何疑問,請透過 GitHub 聯絡:",
+    "privacy.qt.note": "瀏覽器擴充功能 QuickTruth 會在您主動點擊時,把貼文文字送到第三方查核服務,詳見其專屬政策:"
   },
   "en": {
     "hero.title": "Hi, I'm TOYA",
@@ -35,6 +37,7 @@ const STRINGS = {
     "works.title": "Projects",
     "works.langforge": "AI-powered game screenshot translator that overlays results right on the image.",
     "works.brighttube": "Chrome extension to adjust YouTube video brightness with simple radio buttons.",
+    "works.quicktruth": "Chrome extension that shows Cofacts and Taiwan FactCheck Center results next to Facebook posts, plus on-device AI analysis.",
     "contact.title": "Contact",
     "nav.privacy": "Privacy Policy",
     "nav.home": "← Home",
@@ -53,7 +56,8 @@ const STRINGS = {
     "privacy.changes.title": "Changes to this policy",
     "privacy.changes.body": "If this policy changes, the updated version will be posted on this page with a new date.",
     "privacy.contact.title": "Contact us",
-    "privacy.contact.body": "If you have questions about this policy, please contact us through GitHub:"
+    "privacy.contact.body": "If you have questions about this policy, please contact us through GitHub:",
+    "privacy.qt.note": "The QuickTruth browser extension sends post text to third-party fact-check services when you click a button. See its dedicated policy:"
   }
 };
 
