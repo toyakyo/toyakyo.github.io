@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOYA · Go-OnSoft</title>
+  <meta name="description" content="TOYA — independent developer. Studio: Go-OnSoft.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="brand">Go-OnSoft</span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="zh-Hant">中文</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="hero.title"></h1>
+      <p data-i18n="hero.subtitle"></p>
+    </section>
+
+    <section>
+      <h2 data-i18n="about.title"></h2>
+      <p data-i18n="about.body"></p>
+    </section>
+
+    <section>
+      <h2 data-i18n="works.title"></h2>
+      <div class="cards">
+        <a class="card" href="https://github.com/toyakyo/LangForge" target="_blank" rel="noopener">
+          <h3>LangForge</h3>
+          <p data-i18n="works.langforge"></p>
+          <span class="tags">Python · Windows</span>
+        </a>
+        <a class="card" href="https://github.com/toyakyo/BrightTube" target="_blank" rel="noopener">
+          <h3>BrightTube</h3>
+          <p data-i18n="works.brighttube"></p>
+          <span class="tags">JavaScript · Chrome</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 data-i18n="contact.title"></h2>
+      <ul class="links">
+        <li><a href="https://github.com/toyakyo" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.facebook.com/groups/2150940378645437" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> TOYA · Go-OnSoft</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
