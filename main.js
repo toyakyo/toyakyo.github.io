@@ -7,7 +7,25 @@ const STRINGS = {
     "works.title": "作品",
     "works.langforge": "AI 遊戲截圖翻譯工具,翻譯結果直接疊在畫面上。",
     "works.brighttube": "Chrome 擴充功能,用單選按鈕快速調整 YouTube 影片亮度。",
-    "contact.title": "聯絡"
+    "contact.title": "聯絡",
+    "nav.privacy": "隱私權政策",
+    "nav.home": "← 回首頁",
+    "privacy.title": "隱私權政策",
+    "privacy.updated": "最後更新:2026 年 10 月 7 日",
+    "privacy.scope.title": "適用範圍",
+    "privacy.scope.body": "本政策適用於 Go-OnSoft(開發者:TOYA)發布的應用程式與本網站。",
+    "privacy.collect.title": "我們蒐集的資料",
+    "privacy.collect.body": "我們不要求您註冊帳號,也不會主動蒐集姓名、電子郵件、位置等個人資料。各應用程式如需存取裝置功能,會依 Android 系統的權限機制先徵求您的同意。",
+    "privacy.share.title": "資料分享",
+    "privacy.share.body": "我們不會出售您的個人資料,也不會與第三方分享。若應用程式使用第三方服務(例如廣告或分析),會在該應用程式的商店頁面說明。",
+    "privacy.storage.title": "資料儲存",
+    "privacy.storage.body": "應用程式產生的設定與資料儲存在您的裝置上,解除安裝應用程式即可移除。",
+    "privacy.children.title": "兒童隱私",
+    "privacy.children.body": "我們不會刻意蒐集 13 歲以下兒童的個人資料。",
+    "privacy.changes.title": "政策變更",
+    "privacy.changes.body": "本政策若有修改,會更新在此頁面並標示最後更新日期。",
+    "privacy.contact.title": "聯絡我們",
+    "privacy.contact.body": "對本政策有任何疑問,請透過 GitHub 聯絡:"
   },
   "en": {
     "hero.title": "Hi, I'm TOYA",
@@ -17,7 +35,25 @@ const STRINGS = {
     "works.title": "Projects",
     "works.langforge": "AI-powered game screenshot translator that overlays results right on the image.",
     "works.brighttube": "Chrome extension to adjust YouTube video brightness with simple radio buttons.",
-    "contact.title": "Contact"
+    "contact.title": "Contact",
+    "nav.privacy": "Privacy Policy",
+    "nav.home": "← Home",
+    "privacy.title": "Privacy Policy",
+    "privacy.updated": "Last updated: October 7, 2026",
+    "privacy.scope.title": "Scope",
+    "privacy.scope.body": "This policy applies to the apps published by Go-OnSoft (developer: TOYA) and to this website.",
+    "privacy.collect.title": "Information we collect",
+    "privacy.collect.body": "We do not require an account and do not actively collect personal information such as your name, email address or location. If an app needs access to a device feature, it asks for your permission through the Android permission system first.",
+    "privacy.share.title": "Data sharing",
+    "privacy.share.body": "We do not sell your personal information and do not share it with third parties. If an app uses a third-party service (for example ads or analytics), it is described on that app's store page.",
+    "privacy.storage.title": "Data storage",
+    "privacy.storage.body": "Settings and data created by an app are stored on your device and are removed when you uninstall the app.",
+    "privacy.children.title": "Children's privacy",
+    "privacy.children.body": "We do not knowingly collect personal information from children under 13.",
+    "privacy.changes.title": "Changes to this policy",
+    "privacy.changes.body": "If this policy changes, the updated version will be posted on this page with a new date.",
+    "privacy.contact.title": "Contact us",
+    "privacy.contact.body": "If you have questions about this policy, please contact us through GitHub:"
   }
 };
 
