@@ -72,9 +72,13 @@ h2 { font-size: 1.25rem; margin: 0 0 12px; }
   color: inherit;
 }
 .card:hover { border-color: var(--accent); text-decoration: none; }
+.card.static:hover { border-color: var(--line); }
 .card h3 { margin: 0 0 6px; }
 .card p { margin: 0 0 10px; color: var(--muted); font-size: .95rem; }
 .tags { font-size: .8rem; color: var(--accent); }
+
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.chips li { padding: 4px 12px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; font-size: .9rem; }
 
 .links { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
 
