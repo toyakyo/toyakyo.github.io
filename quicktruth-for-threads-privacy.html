@@ -13,6 +13,7 @@
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-lang="zh-Hant">中文</button>
       <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="ja">日本語</button>
     </div>
   </header>
 
@@ -21,7 +22,7 @@
     <div data-block="zh-Hant">
       <section class="hero">
         <h1>QuickTruth for Threads 隱私權政策</h1>
-        <p>最後更新:2026 年 10 月 22 日</p>
+        <p>最後更新:2026 年 10 月 27 日</p>
       </section>
       <section>
         <h2>適用範圍</h2>
@@ -65,7 +66,7 @@
     <div data-block="en" hidden>
       <section class="hero">
         <h1>QuickTruth for Threads Privacy Policy</h1>
-        <p>Last updated: October 22, 2026</p>
+        <p>Last updated: October 27, 2026</p>
       </section>
       <section>
         <h2>Scope</h2>
@@ -104,6 +105,50 @@
         <p><small>QuickTruth for Threads is an independent extension and is not affiliated with Threads, Meta or Google.</small></p>
       </section>
     </div>
+
+    <!-- ───────────── 日本語 ───────────── -->
+    <div data-block="ja" hidden>
+      <section class="hero">
+        <h1>QuickTruth for Threads プライバシーポリシー</h1>
+        <p>最終更新日:2026年10月27日</p>
+      </section>
+      <section>
+        <h2>適用範囲</h2>
+        <p>本ポリシーは、Go-OnSoft(開発者:TOYA)が公開する Chrome 拡張機能「QuickTruth for Threads」に適用されます。この拡張機能は、threads.com と threads.net の投稿の横に分析ボタンを表示します。</p>
+      </section>
+      <section>
+        <h2>拡張機能がアクセスするデータ</h2>
+        <p>この拡張機能は、Threads のページ上でご覧になっている投稿と返信のテキストだけを読み取ります。目的は、ボタンを表示すること、およびボタンをクリックしたときに分析を行うことに限られます。アカウント登録やログインは不要で、氏名、メールアドレス、アカウント情報、閲覧履歴、位置情報は収集しません。</p>
+      </section>
+      <section>
+        <h2>データの利用と送信</h2>
+        <p>「語意の分解」と「句型分析」は、Chrome 内蔵の端末内AI(Gemini Nano)を使ってお使いのパソコン上で実行されます。投稿のテキストはどのサーバーにも送信されず、開発者にも送信されません。拡張機能自体は外部ネットワーク通信を一切行いません。</p>
+        <p>「手法の判定」と「句型分析」は、@meta.ai で始まる質問文を作成し、コピーできる形で提供します。拡張機能が自動で投稿したり Meta AI を呼び出したりすることは<u>ありません</u>。ご自身でその質問を Threads の返信欄に貼り付けて送信した場合に限り、その内容は Threads と Meta の利用規約およびプライバシーポリシーに従って扱われ、この拡張機能とは無関係です。</p>
+      </section>
+      <section>
+        <h2>データの保存</h2>
+        <p>この拡張機能はデータを一切保存しません(chrome.storage、Cookie、その他の永続的な保存領域は使用しません)。パネルで入力した手法ラベルは、パネルを開いている間だけ存在します。コピーボタンをクリックすると、質問文または作成された画像がクリップボードに書き込まれます。それ以外のことは行いません。</p>
+      </section>
+      <section>
+        <h2>データの共有と販売</h2>
+        <p>開発者はサーバーを運用しておらず、お客様のデータを収集・販売・貸与・共有することはありません。広告や解析ツールも使用しません。</p>
+      </section>
+      <section>
+        <h2>お子様のプライバシー</h2>
+        <p>13歳未満のお子様の個人情報を意図的に収集することはありません。</p>
+      </section>
+      <section>
+        <h2>ポリシーの変更</h2>
+        <p>本ポリシーを変更する場合は、このページに掲載し、最終更新日を更新します。</p>
+      </section>
+      <section>
+        <h2>お問い合わせ</h2>
+        <p>本ポリシーに関するご質問は、GitHub からご連絡ください:<a href="https://github.com/toyakyo/toyakyo.github.io/issues" target="_blank" rel="noopener">github.com/toyakyo</a></p>
+      </section>
+      <section>
+        <p><small>QuickTruth for Threads は独立して開発された拡張機能であり、Threads、Meta、Google とは無関係です。</small></p>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -112,7 +157,7 @@
 
   <script>
     (function () {
-      var LANGS = ["zh-Hant", "en"];
+      var LANGS = ["zh-Hant", "en", "ja"];
       function get() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
       function set(v) { try { localStorage.setItem("lang", v); } catch (e) { } }
       function apply(lang) {
@@ -127,7 +172,7 @@
       }
       var saved = get();
       var nav = (navigator.language || "").toLowerCase();
-      apply(LANGS.indexOf(saved) >= 0 ? saved : (nav.indexOf("zh") === 0 ? "zh-Hant" : "en"));
+      apply(LANGS.indexOf(saved) >= 0 ? saved : (nav.indexOf("zh") === 0 ? "zh-Hant" : nav.indexOf("ja") === 0 ? "ja" : "en"));
       document.querySelectorAll(".lang button").forEach(function (b) {
         b.addEventListener("click", function () { apply(b.dataset.lang); });
       });
