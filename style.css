@@ -83,3 +83,6 @@ h2 { font-size: 1.25rem; margin: 0 0 12px; }
 .links { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0; }
 
 footer { padding: 32px 16px 48px; color: var(--muted); }
+
+.feat { padding-left: 1.2em; margin: 0; }
+.feat li { margin-bottom: 10px; }
